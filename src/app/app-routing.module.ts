@@ -23,16 +23,15 @@ const routes: Routes = [
   { path: 'newjob', component: NewjobComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'jobgiver', component: JobGiverListComponent },
-  { path: 'add', component: CreateJobGiverComponent },
-  { path: '**', component: HomeComponent }, // Wildcard route, all invalid inputs will route to the home page
+  { path: 'addgiver', component: CreateJobGiverComponent },
 
-  { path: '', redirectTo: 'jobseeker', pathMatch: 'full'},
   { path: 'jobseeker', component: JobSeekerListComponent},
   {path: 'addseeker', component: CreateJobSeekerComponent},
 
-  { path: '', redirectTo: 'joblisting', pathMatch: 'full' },
   { path: 'joblisting', component: JobListingListComponent },
-  { path: 'addlisting', component: CreateJobListingComponent }
+  { path: 'addlisting', component: CreateJobListingComponent },
+
+  { path: '**', component: HomeComponent }, // Wildcard route, all invalid inputs will route to the home page
 ];
 
 @NgModule({

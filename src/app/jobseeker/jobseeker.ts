@@ -3,6 +3,6 @@ export class JobSeeker {
     name: string;
     email: string;
     password: string;
-    Industry: string;
+    industry: string;
     active = true;
 }

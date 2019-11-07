@@ -8,4 +8,5 @@ export class JobListing {
     FilterTagTwo: string;
     EducationRequirement: string;
     Description: string;
+    Skills: string;
 }
