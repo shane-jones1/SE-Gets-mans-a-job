@@ -1,0 +1,9 @@
+<p>job-listing-list works!</p>
+
+<h1>Job Listing</h1>
+<div *ngFor="let joblisting of joblisting" style="width: 300px;">
+  <app-job-listing-details [joblisting]='joblisting'></app-job-listing-details>
+</div>
+<div style="margin-top:20px;">
+  <button type="button" class="button btn-danger" (click)='deleteJobListing()'>Delete All</button>
+</div>

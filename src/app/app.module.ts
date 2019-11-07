@@ -11,19 +11,36 @@ import { LoginModule } from './login/login.module';
 import { JoblistingsModule } from './joblistings/joblistings.module';
 import { NewjobModule } from './newjob/newjob.module';
 import { SignupModule } from './signup/signup.module';
+import { FormsModule } from '@angular/forms';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
+import { JobSeekerDetailsComponent } from './jobseeker/job-seeker-details/job-seeker-details.component';
+import { JobSeekerListComponent } from './jobseeker/job-seeker-list/job-seeker-list.component';
+import { CreateJobSeekerComponent } from './jobseeker/create-job-seeker/create-job-seeker.component';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { JobListingDetailsComponent } from './joblisting/job-listing-details/job-listing-details.component';
+import { JobListingListComponent } from './joblisting/job-listing-list/job-listing-list.component';
+import { CreateJobListingComponent} from './joblisting/create-job-listing/create-job-listing.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    JobSeekerDetailsComponent,
+    JobSeekerListComponent,
+    CreateJobSeekerComponent,
+    JobListingDetailsComponent,
+    JobListingListComponent,
+    CreateJobListingComponent,
   ],
   imports: [
     BrowserModule,
+    AngularFireDatabaseModule,
+    FormsModule,
     LoginModule,
     JoblistingsModule,
     NewjobModule,

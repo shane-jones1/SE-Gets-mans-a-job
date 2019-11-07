@@ -1,0 +1,27 @@
+<p>job-seeker-details works!</p>
+
+<div *ngIf="jobseeker">
+    <div>
+      <label> Name: </label> {{jobseeker.name}}
+    </div>
+    <div>
+      <label>Email: </label> {{jobseeker.email}}
+    </div>
+    <div>
+        <label>Password: </label> {{jobseeker.password}}
+    </div>
+    <div>
+        <label>Industry: </label> {{jobseeker.industry}}
+    </div>
+    <div>
+      <label>Active: </label> {{jobseeker.active}}
+    </div>
+   
+    <span class="button is-small btn-primary" *ngIf='jobseeker.active' (click)='updateActive(false)'>Inactive</span>
+   
+    <span class="button is-small btn-primary" *ngIf='!jobseeker.active' (click)='updateActive(true)'>Active</span>
+   
+    <span class="button is-small btn-danger" (click)='deleteJobSeeker()'>Delete</span>
+   
+    <hr/>
+  </div>

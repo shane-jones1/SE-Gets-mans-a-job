@@ -1,0 +1,11 @@
+<p>job-seeker-list works!</p>
+
+<h1>Job Seeker</h1>
+<div *ngFor="let jobseeker of jobseeker" style="width: 300px;">
+  <app-job-seeker-details [jobseeker]='jobseeker'></app-job-seeker-details>
+</div>
+<div style="margin-top:20px;">
+  <button type="button" class="button btn-danger" (click)='deleteJobSeeker()'>Delete All</button>
+</div>
+
+.
