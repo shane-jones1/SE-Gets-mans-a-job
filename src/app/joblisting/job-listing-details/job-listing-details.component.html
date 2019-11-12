@@ -1,35 +1,35 @@
 <p>job-listing-details works!</p>
-<div *ngIf="job-listing">
+<div *ngIf="joblisting">
     <div>
-      <label>Job Position: </label> {{job-listing.Position}}
+      <label>Job Position: </label> {{joblisting.position}}
     </div>
     <div>
-      <label>Start Date: </label> {{job-listing.StartDate}}
+      <label>Start Date: </label> {{joblisting.StartDate}}
     </div>
     <div>
-        <label>Location: </label> {{job-listing.Location}}
+        <label>Location: </label> {{joblisting.Location}}
     </div>
     <div>
-        <label>Filter Tag 1: </label> {{job-listing.FilterTagOne}}
+        <label>Filter Tag 1: </label> {{joblisting.FilterTagOne}}
     </div>
     <div>
-        <label>Filter Tag Two: </label> {{job-listing.FilterTagTwo}}
+        <label>Filter Tag Two: </label> {{joblisting.FilterTagTwo}}
     </div>
     <div>
-        <label>Education Requirement: </label> {{job-listing.EducationRequirement}}
+        <label>Education Requirement: </label> {{joblisting.EducationRequirement}}
     </div>
     <div>
-        <label>Description: </label> {{job-listing.Description}}
+        <label>Description: </label> {{joblisting.Description}}
       </div>
     <div>
-      <label>Active: </label> {{job-listing.active}}
+      <label>Active: </label> {{joblisting.active}}
     </div>
-   
-    <span class="button is-small btn-primary" *ngIf='job-listing.active' (click)='updateActive(false)'>Inactive</span>
-   
-    <span class="button is-small btn-primary" *ngIf='!job-listing.active' (click)='updateActive(true)'>Active</span>
-   
+
+    <span class="button is-small btn-primary" *ngIf='joblisting.active' (click)='updateActive(false)'>Inactive</span>
+
+    <span class="button is-small btn-primary" *ngIf='!jobListing.active' (click)='updateActive(true)'>Active</span>
+
     <span class="button is-small btn-danger" (click)='deleteJobListing()'>Delete</span>
-   
+
     <hr/>
   </div>
