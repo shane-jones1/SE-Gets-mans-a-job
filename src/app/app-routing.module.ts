@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { JoblistingsComponent } from './joblistings/joblistings.component';
+
 import { SignupComponent } from './signup/signup.component';
 import { NewjobComponent } from './newjob/newjob.component';
 import { CreateJobSeekerComponent } from './jobseeker/create-job-seeker/create-job-seeker.component';
