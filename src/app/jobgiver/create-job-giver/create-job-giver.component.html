@@ -7,9 +7,26 @@
     </div>
 
     <div class="form-group">
-      <label for="age">Age</label>
-      <input type="text" class="form-control" id="age" required [(ngModel)]="jobgiver.industry" name="age">
+      <label for="name">Email</label>
+      <input type="text" class="form-control" id="email" required [(ngModel)]="jobgiver.email" name="email">
     </div>
+
+    <div class="form-group">
+      <label for="name">Password</label>
+      <input type="text" class="form-control" id="Password" required [(ngModel)]="jobgiver.password" name="password">
+    </div>
+
+    <div class="form-group">
+      <label for="name">industry</label>
+      <input type="text" class="form-control" id="industry" required [(ngModel)]="jobgiver.industry" name="industry">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Company Name</label>
+      <input type="text" class="form-control" id="Company" required [(ngModel)]="jobgiver.companyname" name="companyname">
+    </div>
+
+
 
     <button type="submit" class="btn btn-success">Submit</button>
   </form>
