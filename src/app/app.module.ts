@@ -9,7 +9,6 @@ import { HomeModule } from './home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './ui/angular-material/angular-material.module';
 import { LoginModule } from './login/login.module';
-import { JoblistingsModule } from './joblistings/joblistings.module';
 import { NewjobModule } from './newjob/newjob.module';
 import { SignupModule } from './signup/signup.module';
 
@@ -29,7 +28,8 @@ import { CreateJobListingComponent} from './joblisting/create-job-listing/create
 import { JobGiverDetailsComponent } from './jobgiver/job-giver-details/job-giver-details.component';
 import { CreateJobGiverComponent } from './jobgiver/create-job-giver/create-job-giver.component';
 import { JobGiverListComponent } from './jobgiver/job-giver-list/job-giver-list.component';
-import { UpdateJoblistingComponent } from './update-joblisting/update-joblisting.component';
+
+
 
 @NgModule({
   declarations: [
@@ -42,8 +42,7 @@ import { UpdateJoblistingComponent } from './update-joblisting/update-joblisting
     CreateJobListingComponent,
     JobGiverDetailsComponent,
     JobGiverListComponent,
-    CreateJobGiverComponent,
-    UpdateJoblistingComponent
+    CreateJobGiverComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +50,6 @@ import { UpdateJoblistingComponent } from './update-joblisting/update-joblisting
     FormsModule,
     LoginModule,
     FormsModule,
-    JoblistingsModule,
     NewjobModule,
     SignupModule,
     AppRoutingModule,
