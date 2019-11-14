@@ -26,9 +26,9 @@ const routes: Routes = [
   { path: 'add', component: CreateJobGiverComponent },
   { path: '**', component: HomeComponent }, // Wildcard route, all invalid inputs will route to the home page
 
-  { path: '', redirectTo: 'jobseeker', pathMatch: 'full'},
+
   { path: 'jobseeker', component: JobSeekerListComponent},
-  {path: 'addseeker', component: CreateJobSeekerComponent},
+  { path: 'addseeker', component: CreateJobSeekerComponent},
 
   { path: '', redirectTo: 'joblisting', pathMatch: 'full' },
   { path: 'joblisting', component: JobListingListComponent },
