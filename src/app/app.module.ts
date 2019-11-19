@@ -9,7 +9,6 @@ import { HomeModule } from './home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './ui/angular-material/angular-material.module';
 import { LoginModule } from './login/login.module';
-import { JoblistingsModule } from './joblistings/joblistings.module';
 import { NewjobModule } from './newjob/newjob.module';
 import { SignupModule } from './signup/signup.module';
 
@@ -30,6 +29,8 @@ import { JobGiverDetailsComponent } from './jobgiver/job-giver-details/job-giver
 import { CreateJobGiverComponent } from './jobgiver/create-job-giver/create-job-giver.component';
 import { JobGiverListComponent } from './jobgiver/job-giver-list/job-giver-list.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +50,6 @@ import { JobGiverListComponent } from './jobgiver/job-giver-list/job-giver-list.
     FormsModule,
     LoginModule,
     FormsModule,
-    JoblistingsModule,
     NewjobModule,
     SignupModule,
     AppRoutingModule,

@@ -9,4 +9,5 @@ export class JobListing {
     EducationRequirement: string;
     Description: string;
     Skills: string;
+    active = true;
 }
