@@ -13,6 +13,7 @@ import { JobListingListComponent } from './joblisting/job-listing-list/job-listi
 
 import { CreateJobGiverComponent } from './jobgiver/create-job-giver/create-job-giver.component';
 import { JobGiverListComponent } from './jobgiver/job-giver-list/job-giver-list.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   // The current routes to all of the individual pages/modules
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: 'joblisting', component: JobListingListComponent },
   { path: '', redirectTo: 'joblisting', pathMatch: 'full' },
   { path: 'addlisting', component: CreateJobListingComponent },
+  { path: 'profile', component: ProfileComponent },
 
   { path: '**', component: HomeComponent }, // Wildcard route, all invalid inputs will route to the home page
   //{ path: 'addlisting', component: CreateJobListingComponent }

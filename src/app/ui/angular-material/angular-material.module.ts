@@ -60,6 +60,7 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 const modules: any[] = [
 
@@ -103,6 +104,7 @@ const modules: any[] = [
   MatDialogModule,
   MatSnackBarModule,
   MatTooltipModule,
+  FlexLayoutModule,
 
   // MatPaginatorModule,
   // MatSortModule,
