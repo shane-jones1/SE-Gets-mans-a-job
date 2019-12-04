@@ -7,12 +7,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyDMuKy9JJLNbFy6jz80vYqLQ8z5yjWdSe4',
-    authDomain: 'morejobs-d4738.firebaseapp.com',
-    databaseURL: 'https://morejobs-d4738.firebaseio.com',
-    projectId: 'morejobs-d4738',
-    storageBucket: 'morejobs-d4738.appspot.com',
-    messagingSenderId: '297384172776'
+    apiKey: 'AIzaSyBagqMmQv3qKW8Ea3oXhE_mXRBpnn7TFJs',
+    authDomain: 'morejobs-8d849.firebaseapp.com',
+    databaseURL: 'https://morejobs-8d849.firebaseio.com',
+    projectId: 'morejobs-8d849',
+    storageBucket: 'morejobs-8d849.appspot.com',
+    messagingSenderId: '482282226875'
   }
 };
 
