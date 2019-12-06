@@ -24,19 +24,9 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent }, // Sign Up
   { path: 'addseeker', component: CreateJobSeekerComponent}, // Add job seeker account
   { path: 'profile', component: ProfileComponent },
-  // view jobs page
-
-
   { path: 'addgiver', component: CreateJobGiverComponent }, // add job giver account
   { path: 'newjob', component: CreateJobListingComponent }, // Add New Job Listing
-
-
   { path: 'jobgiver', component: JobGiverListComponent },
-
-
-  { path: '**', component: HomeComponent }, // Wildcard route, all invalid inputs will route to the home page
-
-
   { path: 'jobseeker', component: JobSeekerListComponent},
   { path: 'joblisting', component: JobListingListComponent },
   { path: '', redirectTo: 'joblisting', pathMatch: 'full' },

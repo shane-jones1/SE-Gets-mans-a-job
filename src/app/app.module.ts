@@ -30,6 +30,7 @@ import { CreateJobGiverComponent } from './jobgiver/create-job-giver/create-job-
 import { JobGiverListComponent } from './jobgiver/job-giver-list/job-giver-list.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HeaderComponent } from './ui/header/header.component';
+import { JobCardComponent } from './ui/job-card/job-card.component';
 
 
 
@@ -46,7 +47,8 @@ import { HeaderComponent } from './ui/header/header.component';
     JobGiverListComponent,
     CreateJobGiverComponent,
     ProfileComponent,
-    HeaderComponent
+    HeaderComponent,
+    JobCardComponent
   ],
   imports: [
     BrowserModule,
