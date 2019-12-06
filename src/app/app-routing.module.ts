@@ -23,6 +23,7 @@ const routes: Routes = [
   //{ path: 'joblistings', component: JoblistingsComponent },
   { path: 'signup', component: SignupComponent }, // Sign Up
   { path: 'addseeker', component: CreateJobSeekerComponent}, // Add job seeker account
+  { path: 'profile', component: ProfileComponent },
   // view jobs page
 
 
@@ -37,12 +38,10 @@ const routes: Routes = [
 
 
   { path: 'jobseeker', component: JobSeekerListComponent},
-
-
   { path: 'joblisting', component: JobListingListComponent },
   { path: '', redirectTo: 'joblisting', pathMatch: 'full' },
   { path: 'addlisting', component: CreateJobListingComponent },
-  { path: 'profile', component: ProfileComponent },
+
 
   { path: '**', component: HomeComponent }, // Wildcard route, all invalid inputs will route to the home page
   //{ path: 'addlisting', component: CreateJobListingComponent }

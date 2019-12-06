@@ -1,0 +1,16 @@
+.content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.info {
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+  height:80%;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #adb0b3;
+}
