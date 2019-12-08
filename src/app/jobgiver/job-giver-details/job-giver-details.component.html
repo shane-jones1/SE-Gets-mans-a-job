@@ -1,10 +1,25 @@
 <div *ngIf="jobgiver">
+
   <div>
-    <label>First Name: </label> {{jobgiver.name}}
+    <label> Name: </label> {{jobgiver.name}}
   </div>
+
   <div>
-    <label>Age: </label> {{jobgiver.industry}}
+      <label>Email: </label> {{jobgiver.email}}
   </div>
+
+  <div>
+    <label>Industry: </label> {{jobgiver.industry}}
+  </div>
+
+  <div>
+      <label>Company Name: </label> {{jobgiver.companyname}}
+  </div>
+
+    <div>
+        <label> Bio: </label> {{jobgiver.giverBio}}
+    </div>
+
   <div>
     <label>Active: </label> {{jobgiver.active}}
   </div>

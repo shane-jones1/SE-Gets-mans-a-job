@@ -9,7 +9,6 @@ import { HomeModule } from './home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './ui/angular-material/angular-material.module';
 import { LoginModule } from './login/login.module';
-import { JoblistingsModule } from './joblistings/joblistings.module';
 import { NewjobModule } from './newjob/newjob.module';
 import { SignupModule } from './signup/signup.module';
 
@@ -19,22 +18,44 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
+import { JobSeekerDetailsComponent } from './jobseeker/job-seeker-details/job-seeker-details.component';
+import { JobSeekerListComponent } from './jobseeker/job-seeker-list/job-seeker-list.component';
+import { CreateJobSeekerComponent } from './jobseeker/create-job-seeker/create-job-seeker.component';
+import { JobListingDetailsComponent } from './joblisting/job-listing-details/job-listing-details.component';
+import { JobListingListComponent } from './joblisting/job-listing-list/job-listing-list.component';
+import { CreateJobListingComponent} from './joblisting/create-job-listing/create-job-listing.component';
+
 import { JobGiverDetailsComponent } from './jobgiver/job-giver-details/job-giver-details.component';
 import { CreateJobGiverComponent } from './jobgiver/create-job-giver/create-job-giver.component';
 import { JobGiverListComponent } from './jobgiver/job-giver-list/job-giver-list.component';
+import { ProfileComponent } from './profile/profile.component';
+import { HeaderComponent } from './ui/header/header.component';
+import { JobCardComponent } from './ui/job-card/job-card.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    JobSeekerDetailsComponent,
+    JobSeekerListComponent,
+    CreateJobSeekerComponent,
+    JobListingDetailsComponent,
+    JobListingListComponent,
+    CreateJobListingComponent,
     JobGiverDetailsComponent,
     JobGiverListComponent,
-    CreateJobGiverComponent
+    CreateJobGiverComponent,
+    ProfileComponent,
+    HeaderComponent,
+    JobCardComponent
   ],
   imports: [
     BrowserModule,
+    AngularFireDatabaseModule,
+    FormsModule,
     LoginModule,
     FormsModule,
-    JoblistingsModule,
     NewjobModule,
     SignupModule,
     AppRoutingModule,

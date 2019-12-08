@@ -7,14 +7,26 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyBagqMmQv3qKW8Ea3oXhE_mXRBpnn7TFJs',
-    authDomain: 'morejobs-8d849.firebaseapp.com',
-    databaseURL: 'https://morejobs-8d849.firebaseio.com',
-    projectId: 'morejobs-8d849',
-    storageBucket: 'morejobs-8d849.appspot.com',
-    messagingSenderId: '482282226875'
+    apiKey: "AIzaSyB55PJrtqkvV71SUW9gh9NxVTZ6tR8NU1I",
+    authDomain: "test-e0a3c.firebaseapp.com",
+    databaseURL: "https://test-e0a3c.firebaseio.com",
+    projectId: "test-e0a3c",
+    storageBucket: "test-e0a3c.appspot.com",
+    messagingSenderId: "806280227023",
+    appId: "1:806280227023:web:10ef528b65d50e6927efba"
   }
 };
+
+const firebaseConfig = {
+  apiKey: "AIzaSyB55PJrtqkvV71SUW9gh9NxVTZ6tR8NU1I",
+    authDomain: "test-e0a3c.firebaseapp.com",
+    databaseURL: "https://test-e0a3c.firebaseio.com",
+    projectId: "test-e0a3c",
+    storageBucket: "test-e0a3c.appspot.com",
+    messagingSenderId: "806280227023",
+    appId: "1:806280227023:web:10ef528b65d50e6927efba"
+};
+
 
 /*
  * For easier debugging in development mode, you can import the following file

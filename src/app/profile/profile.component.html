@@ -1,0 +1,26 @@
+<div class="main">
+  <div class="content">
+    <mat-card class="info" height=80%>
+      <div>
+        <label>Name: </label> {{jobgiver.name}}
+      </div>
+      <div>
+        <label>Email: </label> {{jobgiver.email}}
+      </div>
+      <div>
+        <label>Industry: </label> {{jobgiver.industry}}
+      </div>
+      <div>
+        <label>Company Name: </label> {{jobgiver.companyname}}
+      </div>
+
+      <div *ngFor="let jobgiver of jobgiver" style="width: 300px;">
+          <app-job-giver-details [jobgiver]='jobgiver'></app-job-giver-details>
+      </div>
+
+      <div style="margin-top:20px;">
+          <button type="button" class="button btn-danger" (click)='getJobGiverList()'>Get All</button>
+      </div>
+    </mat-card>
+  </div>
+</div>

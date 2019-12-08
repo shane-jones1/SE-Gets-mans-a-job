@@ -1,7 +1,11 @@
-<h1>JobGivers</h1>
-<div *ngFor="let jobgiver of jobgiver" style="width: 300px;">
-  <app-job-giver-details [jobgiver]='jobgiver'></app-job-giver-details>
-</div>
+
+<div class="main">
+    <h1>Profile</h1>
+    <hr><br>
+    <div *ngFor="let jobgiver of jobgiver" style="width: 300px;">
+      <app-job-giver-details [jobgiver]='jobgiver'></app-job-giver-details>
+    </div>
+
 <div style="margin-top:20px;">
-  <button type="button" class="button btn-danger" (click)='deleteJobGiver()'>Delete All</button>
+  <button type="button" class="button btn-danger" (click)='getJobGiverList()'>Delete All</button>
 </div>

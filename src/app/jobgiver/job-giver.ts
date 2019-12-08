@@ -4,6 +4,7 @@ export class JobGiver {
   password: string;
   industry: string;
   name: string;
-  uid: string;
+  companyname: string;
+  giverBio: string;
   active = true;
 }
