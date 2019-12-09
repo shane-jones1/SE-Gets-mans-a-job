@@ -1,34 +1,36 @@
-<div *ngIf="jobgiver">
-
-  <div>
-    <label> Name: </label> {{jobgiver.name}}
-  </div>
-
-  <div>
-      <label>Email: </label> {{jobgiver.email}}
-  </div>
-
-  <div>
-    <label>Industry: </label> {{jobgiver.industry}}
-  </div>
-
-  <div>
-      <label>Company Name: </label> {{jobgiver.companyname}}
-  </div>
-
+<div class="main"*ngIf="jobgiver">
+<mat-card class="card">
     <div>
-        <label> Bio: </label> {{jobgiver.giverBio}}
-    </div>
+        <label> Name: </label> {{jobgiver.name}}
+      </div>
 
-  <div>
-    <label>Active: </label> {{jobgiver.active}}
-  </div>
+      <div>
+          <label>Email: </label> {{jobgiver.email}}
+      </div>
 
-  <span class="button is-small btn-primary" *ngIf='jobgiver.active' (click)='updateActive(false)'>Inactive</span>
+      <div>
+        <label>Industry: </label> {{jobgiver.industry}}
+      </div>
 
-  <span class="button is-small btn-primary" *ngIf='!jobgiver.active' (click)='updateActive(true)'>Active</span>
+      <div>
+          <label>Company Name: </label> {{jobgiver.companyname}}
+      </div>
 
-  <span class="button is-small btn-danger" (click)='deleteJobGiver()'>Delete</span>
+        <div>
+            <label> Bio: </label> {{jobgiver.giverBio}}
+        </div>
 
-  <hr/>
+      <div>
+        <label>Active: </label> {{jobgiver.active}}
+      </div>
+
+      <span class="button is-small btn-primary" *ngIf='jobgiver.active' (click)='updateActive(false)'>Inactive</span>
+
+      <span class="button is-small btn-primary" *ngIf='!jobgiver.active' (click)='updateActive(true)'>Active</span>
+
+      <span class="button is-small btn-danger" (click)='deleteJobGiver()'>Delete</span>
+
+      <hr/>
+</mat-card>
+
 </div>

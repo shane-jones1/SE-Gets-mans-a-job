@@ -1,13 +1,15 @@
-<<<<<<< HEAD
-<h1>Job Seeker</h1>
-=======
-<h1>Job Seeker Profile</h1>
->>>>>>> origin/Shane
-<div *ngFor="let jobseeker of jobseeker" style="width: 300px;">
-  <app-job-seeker-details [jobseeker]='jobseeker'></app-job-seeker-details>
+<div class="main">
+  <mat-card class="card">
+      <h1>Job Seeker Profile</h1>
+      <div *ngFor="let jobseeker of jobseeker" style="width: 300px;">
+        <app-job-seeker-details [jobseeker]='jobseeker'></app-job-seeker-details>
+      </div>
+      <div style="margin-top:20px;">
+        <button type="button" class="button btn-danger" (click)='deleteJobSeeker()'>Delete All</button>
+      </div>
+  </mat-card>
 </div>
-<div style="margin-top:20px;">
-  <button type="button" class="button btn-danger" (click)='deleteJobSeeker()'>Delete All</button>
-</div>
+
+
 
 .

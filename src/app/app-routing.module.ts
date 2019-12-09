@@ -14,6 +14,7 @@ import { JobListingListComponent } from './joblisting/job-listing-list/job-listi
 import { CreateJobGiverComponent } from './jobgiver/create-job-giver/create-job-giver.component';
 import { JobGiverListComponent } from './jobgiver/job-giver-list/job-giver-list.component';
 import { ProfileComponent } from './profile/profile.component';
+import { Profile1Component } from './profile1/profile1.component';
 
 const routes: Routes = [
   // The current routes to all of the individual pages/modules
@@ -23,7 +24,8 @@ const routes: Routes = [
   //{ path: 'joblistings', component: JoblistingsComponent },
   { path: 'signup', component: SignupComponent }, // Sign Up
   { path: 'addseeker', component: CreateJobSeekerComponent}, // Add job seeker account
-  { path: 'profile', component: ProfileComponent },
+  { path: 'profile', component: JobGiverListComponent },
+  { path: 'profile1', component: Profile1Component },
   { path: 'addgiver', component: CreateJobGiverComponent }, // add job giver account
   { path: 'newjob', component: CreateJobListingComponent }, // Add New Job Listing
   { path: 'jobgiver', component: JobGiverListComponent },

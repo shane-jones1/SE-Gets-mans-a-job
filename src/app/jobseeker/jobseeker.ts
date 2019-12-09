@@ -4,5 +4,6 @@ export class JobSeeker {
     email: string;
     password: string;
     industry: string;
+    bio: string;
     active = true;
 }

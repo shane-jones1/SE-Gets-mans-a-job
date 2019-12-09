@@ -1,43 +1,47 @@
-<h3>Create User</h3>
-<div [hidden]="submitted" style="width: 300px;">
-  <form (ngSubmit)="onSubmit()">
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" required [(ngModel)]="jobgiver.name" name="name">
-    </div>
+<div class="main">
+  <mat-card class="card">
+      <h3 style="width: 400px;">Please create an Employer account</h3>
+      <div [hidden]="submitted" style="width: 400px;">
+        <form (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" required [(ngModel)]="jobgiver.name" name="name">
+          </div>
 
-    <div class="form-group">
-      <label for="name">Email</label>
-      <input type="text" class="form-control" id="email" required [(ngModel)]="jobgiver.email" name="email">
-    </div>
+          <div class="form-group">
+            <label for="name">Email</label>
+            <input type="text" class="form-control" id="email" required [(ngModel)]="jobgiver.email" name="email">
+          </div>
 
-    <div class="form-group">
-      <label for="name">Password</label>
-      <input type="text" class="form-control" id="Password" required [(ngModel)]="jobgiver.password" name="password">
-    </div>
+          <div class="form-group">
+            <label for="name">Password</label>
+            <input type="text" class="form-control" id="Password" required [(ngModel)]="jobgiver.password" name="password">
+          </div>
 
-    <div class="form-group">
-      <label for="name">industry</label>
-      <input type="text" class="form-control" id="industry" required [(ngModel)]="jobgiver.industry" name="industry">
-    </div>
+          <div class="form-group">
+            <label for="name">Industry</label>
+            <input type="text" class="form-control" id="industry" required [(ngModel)]="jobgiver.industry" name="industry">
+          </div>
 
-    <div class="form-group">
-      <label for="name">Company Name</label>
-      <input type="text" class="form-control" id="Company" required [(ngModel)]="jobgiver.companyname" name="companyname">
-    </div>
+          <div class="form-group">
+            <label for="name">Company Name</label>
+            <input type="text" class="form-control" id="Company" required [(ngModel)]="jobgiver.companyname" name="companyname">
+          </div>
 
-    <div class="form-group">
-        <label for="name"> Giver Bio</label>
-        <input type="text" class="form-control" id="bio" required [(ngModel)]="jobgiver.giverBio" name="giverBio">
-    </div>
+          <div class="form-group">
+              <label for="name"> Recruiter Bio</label>
+              <input type="text" class="form-control-bio" id="bio" required [(ngModel)]="jobgiver.giverBio" name="giverBio">
+          </div>
+          <button mat-raised-button type="submit" class="btn btn-success" color="accent">Submit</button>
 
+        </form>
+      </div>
 
-    <button type="submit" class="btn btn-success">Submit</button>
+      <div [hidden]="!submitted">
+        <h4>You submitted successfully!</h4>
+        <!-- <button class="btn btn-success" (click)="newJobGiver()">Add</button> -->
+      </div>
 
-  </form>
+  </mat-card>
 </div>
 
-<div [hidden]="!submitted">
-  <h4>You submitted successfully!</h4>
-  <button class="btn btn-success" (click)="newJobGiver()">Add</button>
-</div>
