@@ -18,7 +18,7 @@ import { ProfileComponent } from './profile/profile.component';
 const routes: Routes = [
   // The current routes to all of the individual pages/modules
   { path: '', component: JobListingListComponent }, // Home Page
-  { path: 'home', component: HomeComponent }, // Navigate To Home Page with specific url tag
+  { path: 'home', component: JobListingListComponent }, // Navigate To Home Page with specific url tag
   { path: 'login', component: LoginComponent }, // Login Page
   //{ path: 'joblistings', component: JoblistingsComponent },
   { path: 'signup', component: SignupComponent }, // Sign Up
