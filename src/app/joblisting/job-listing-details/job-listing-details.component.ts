@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { JobListingService } from '../job-listing.service';
 import { JobListing } from '../joblisting';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @Component({

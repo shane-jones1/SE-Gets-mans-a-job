@@ -1,34 +1,25 @@
 <div *ngIf="joblisting">
-    <div>
-      <label>Job Position: </label> {{joblisting.position}}
-    </div>
-    <div>
-      <label>Start Date: </label> {{joblisting.StartDate}}
-    </div>
-    <div>
-        <label>Location: </label> {{joblisting.Location}}
-    </div>
-    <div>
-        <label>Filter Tag 1: </label> {{joblisting.FilterTagOne}}
-    </div>
-    <div>
-        <label>Filter Tag Two: </label> {{joblisting.FilterTagTwo}}
-    </div>
-    <div>
-        <label>Education Requirement: </label> {{joblisting.EducationRequirement}}
-    </div>
-    <div>
-        <label>Description: </label> {{joblisting.Description}}
-      </div>
-    <div>
-      <label>Active: </label> {{joblisting.active}}
-    </div>
-
-    <span class="button is-small btn-primary" *ngIf='joblisting.active' (click)='updateActive(false)'>Inactive</span>
-
-    <span class="button is-small btn-primary" *ngIf='!joblisting.active' (click)='updateActive(true)'>Active</span>
-
-    <span class="button is-small btn-danger" (click)='deleteJobListing()'>Delete</span>
-
-    <hr/>
-  </div>
+  <mat-card class="main">
+      <div>
+          <h2>{{joblisting.position}}</h2>
+        </div>
+        <div>
+            <h3>{{joblisting.Location}}</h3>
+        </div>
+        <br>
+        <div>
+          <button mat-stroked-button class="b1">{{joblisting.FilterTagOne}}</button>
+          <button mat-stroked-button class="b1">{{joblisting.FilterTagTwo}}</button>
+        </div>
+        <div>
+            <p>Education Requirement:  {{joblisting.EducationRequirement}} </p>
+        </div>
+        <div class="description">
+            <label>Description: </label> {{joblisting.Description}}
+          </div>
+          <br>
+        <div class="apply_button">
+            <button mat-raised-button color="accent">Apply</button>
+        </div>
+  </mat-card>
+</div>
