@@ -18,6 +18,9 @@ export class JobListingListComponent implements OnInit {
     this.getJobListingList();
   }
 
+  reloadData() {
+    this.joblisting = this.joblistingService.getJobListingList();
+  }
   getJobListingList() {
     this.joblistingService.getJobListingList().snapshotChanges().pipe(
       map(changes =>
@@ -29,8 +32,8 @@ export class JobListingListComponent implements OnInit {
       this.joblisting = joblisting;
     });
   }
-
   deleteJobListing() {
-    this.joblistingService.deleteAll().catch(err => console.log(err));
+    //this.joblistingService.deleteAll().catch(err => console.log(err));
   }
+
 }

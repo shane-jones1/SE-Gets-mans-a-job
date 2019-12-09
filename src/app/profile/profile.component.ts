@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { JobGiver } from '../jobgiver/job-giver';
 import { JobGiverService } from '../jobgiver/job-giver.service';
+import { map } from 'rxjs/operators';
 
 
 @Component({
@@ -15,6 +16,7 @@ export class ProfileComponent implements OnInit {
   constructor(private jobgiverService: JobGiverService) { }
 
   ngOnInit() {
+    this.getJobGiverList();
   }
 
   updateActive(isActive: boolean) {
@@ -23,4 +25,15 @@ export class ProfileComponent implements OnInit {
       .catch(err => console.log(err));
   }
 
+  getJobGiverList() {
+    this.jobgiverService.getJobGiverList().snapshotChanges().pipe(
+      map(changes =>
+        changes.map(c =>
+          ({ key: c.payload.key, ...c.payload.val() })
+        )
+      )
+    ).subscribe(jobgiver => {
+      jobgiver = jobgiver;
+    });
+  }
 }

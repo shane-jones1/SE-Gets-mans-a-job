@@ -5,5 +5,6 @@ export class JobGiver {
   industry: string;
   name: string;
   companyname: string;
+  giverBio: string;
   active = true;
 }
