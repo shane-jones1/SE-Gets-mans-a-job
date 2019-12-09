@@ -4,9 +4,14 @@
   border: 1px solid #adb0b3;
 }
 
-.apply_button {
+.apply {
   display: flex;
   justify-content: center;
+}
+
+.apply_button {
+  width: 200px!important;
+  height: 50px!important;
 }
 
 

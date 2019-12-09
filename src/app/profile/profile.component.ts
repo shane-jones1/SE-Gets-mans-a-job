@@ -11,7 +11,7 @@ import { map } from 'rxjs/operators';
 })
 export class ProfileComponent implements OnInit {
 
-  @Input() jobgiver: JobGiver;
+  @Input() jobgiver: any;
 
   constructor(private jobgiverService: JobGiverService) { }
 

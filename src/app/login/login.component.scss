@@ -12,7 +12,16 @@
   margin: 20px;
   height: 30%;
   width: 25%;
-   border: 1px solid #adb0b3;
+  border: 1px solid #adb0b3;
+}
+
+.login_button {
+  width: 200px!important;
+  height: 40px!important;
+}
+.submit {
+  display: flex;
+  justify-content: center;
 }
 
 form {
